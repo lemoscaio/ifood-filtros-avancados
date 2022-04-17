@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Filtros Avançados ifood",
+    "name": "ifood - Filtros Avançados",
     "version": "0.1.0",
     "description": "Extensão desenvolvida para adicionar filtros complementares no iFood, de forma a otimizar a experiência do usuário.",
     "icons": {
