@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
 .div-extensao {
     color: #717171;
     font-family: "SulSans", "Helvetica", "sans-serif";
@@ -31,7 +39,7 @@ details summary {
 details input[type=checkbox] {
     transform: scale(1.5);
     margin: 5px;
-    
+
 }
 
 details label {
@@ -39,12 +47,79 @@ details label {
 }
 
 .popup {
-    width: 300px;
-    height: 400px;
+    background-color: #fafafa;
+    width: 500px;
+    min-height: 500px;
+    font-family: 'Inter', sans-serif;
+}
+
+.popup-divider{
+    border-bottom: 1px solid rgb(203, 203, 203);
+    margin-bottom: 15px;
+}
+
+.popup-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .popup-title {
-    font-size: 1.3rem;
-    font-weight: normal;
+    font-size: 1.2rem;
+    font-weight: 500;
     text-align: center;
+    margin: 10px 0 20px;
+    color: rgb(65, 98, 159);
+}
+
+.popup-subtitle {
+    font-weight: normal;
+    font-size: 1.0rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.popup-list-title {
+    margin: 0.8rem 0 0.3rem;
+}
+
+.popup ul li {
+    list-style-position: inside;
+    padding: 0.5rem 0.2rem 0;
+}
+
+.popup ul p {
+    padding: 0.2;
+}
+
+.popup-image {
+    width: 100%;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+.footer-popup {
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.popup a {
+    /* text-decoration: none; */
+    color: cornflowerblue;
+}
+
+.popup a:hover {
+    color: rgb(63, 92, 146);
+}
+
+.popup a:visited {
+    color: cornflowerblue;
+}
+
+.popup a:visited:hover {
+    color: rgb(63, 92, 146);
 }

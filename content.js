@@ -124,7 +124,7 @@ function criarDivFiltros() {
 
     novoNode.innerHTML = `
     <details>
-        <summary>Filtre aqui o que você não quer ver</summary>
+        <summary>Filtre aqui o que você NÃO quer ver</summary>
         <form class="form-filtro"> 
         ${conteudoDetails}
         </form>
