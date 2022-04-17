@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Filtros Avançados ifood",
+    "version": "0.1",
+    "icons": {
+        "16": "icones/icone-16.png",
+        "32": "icones/icone-32.png",
+        "48": "icones/icone-48.png",
+        "128": "icones/icone-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://wwww.ifood.com.br/restaurantes*"],
+            "html": ["index.html"],
+            "css": ["style.css"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_icon": "icones/icone-128.png",
+        "default_popup": "popup.html"
+    }
+}
