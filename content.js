@@ -5,7 +5,7 @@ const raizPagina = document.querySelector("[data-reactroot]");
 raizPagina.addEventListener("DOMNodeInserted", inicializarFiltro);
 
 function inicializarFiltro() {
-    const restaurantesWrapper = document.querySelector(
+    let restaurantesWrapper = document.querySelector(
         '[data-card-name="MERCHANT_LIST_V2"]'
     );
 
@@ -80,6 +80,13 @@ function inicializarFiltro() {
         restaurantesWrapper.addEventListener("DOMNodeInserted", checarFiltro);
 
         adicionarInputFiltro(categorias, restaurantesWrapper);
+    }
+    else {
+        setTimeout(() => {
+            restaurantesWrapper = document.querySelector(
+                '[data-card-name="MERCHANT_LIST_V2"]'
+            );
+        }, 2000)
     }
 }
 

@@ -11,7 +11,13 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://wwww.ifood.com.br/restaurantes*"],
+            "matches": [
+                "https://wwww.ifood.com.br/",
+                "https://wwww.ifood.com.br/restaurantes",
+                "https://wwww.ifood.com.br/restaurantes*",
+                "https://wwww.ifood.com.br/delivery",
+                "https://wwww.ifood.com.br/delivery*"
+            ],
             "html": ["index.html"],
             "css": ["style.css"],
             "js": ["content.js"]
