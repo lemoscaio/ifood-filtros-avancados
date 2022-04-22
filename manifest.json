@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ifood - Filtros Avançados",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Extensão desenvolvida para adicionar filtros complementares no iFood, de forma a otimizar a experiência do usuário.",
     "icons": {
         "16": "icones/icone-16.png",
@@ -12,9 +12,11 @@
     "content_scripts": [
         {
             "matches": [
-                "https://wwww.ifood.com.br/",
+                "https://www.ifood.com.br/*",
+                "https://wwww.ifood.com.br/*",
                 "https://wwww.ifood.com.br/restaurantes",
                 "https://wwww.ifood.com.br/restaurantes*",
+                "https://wwww.ifood.com.br/lista-restaurantes*",
                 "https://wwww.ifood.com.br/delivery",
                 "https://wwww.ifood.com.br/delivery*"
             ],
