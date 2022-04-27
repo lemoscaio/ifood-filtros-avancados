@@ -1,11 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 10px;
-}
-
 .div-extensao {
     color: #717171;
     font-family: "SulSans", "Helvetica", "sans-serif";
@@ -15,19 +7,19 @@ body {
     user-select: none;
 }
 
-form {
+.div-extensao form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     /* width: 50%; */
 }
 
-form div {
+.div-extensao form div {
     display: flex;
     align-items: center;
     margin: 5px 10px;
 }
 
-details summary {
+.div-extensao details summary {
     font-size: 1rem;
     color: rgb(63, 62, 62);
     font-weight: bold;
@@ -36,13 +28,13 @@ details summary {
     margin-bottom: 10px;
 }
 
-details input[type=checkbox] {
+.div-extensao details input[type=checkbox] {
     transform: scale(1.5);
     margin: 5px;
 
 }
 
-details label {
+.div-extensao details label {
     padding-left: 5px;
 }
 
@@ -51,6 +43,8 @@ details label {
     width: 500px;
     min-height: 500px;
     font-family: 'Inter', sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .popup-divider{
